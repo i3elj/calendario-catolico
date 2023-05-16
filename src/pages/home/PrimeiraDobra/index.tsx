@@ -9,7 +9,7 @@ function PrimeiraDobra() {
         <div className="dobra" id="P-dobra">
             <Logo />
             <section id="P-dobra__anuncio">
-                <div>
+                <div id="P-dobra__copy">
                     <h2>INSCRIÇÕES ENCERRADAS</h2>
                     <p>Que pena, as vendas do kit o básico do que todo católico precisa saber foram encerradas. Mas você pode se cadastrar na lista de espera para ser avisado em primeira mão quando houver uma nova abertura de vendas.</p>
                     <h3>Cadastre-se seus dados aqui em baixo:</h3>

@@ -69,3 +69,47 @@
     top: 56vh;
     right: 50vw;
 }
+
+@media (max-width: 768px) {
+    #obrigado {
+        margin: 24px;
+        width: initial;
+    }
+
+    #root {
+        box-sizing: border-box;
+    }
+
+    #title {
+        border-radius: 8px;
+        padding: 14px 20px;
+        background-color: white;
+    }
+
+    #title h1 {
+        font-size: 34px;
+    }
+
+    #obrigado h3 {
+        font-size: 14px;
+    }
+
+    #obrigado p {
+        font-size: 12px;
+        font-weight: 500;
+        width: auto;
+    }
+
+    #botao {
+        gap: 4px;
+        padding: 8px 16px;
+    }
+
+    #botao svg {
+        height: 20px;
+    }
+
+    #botao h2 {
+        font-size: 12px;
+    }
+}

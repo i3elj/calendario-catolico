@@ -42,17 +42,17 @@
     font-weight: 700;
 }
 
-#P-dobra__anuncio div form {
+#P-dobra__form {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-#P-dobra__anuncio div form input:focus {
+#P-dobra__form input:focus {
     outline: none;
 }
 
-#P-dobra__anuncio div form input {
+#P-dobra__form input, a {
     height: 48px;
     padding-left: 14px;
     border-radius: 6px;
@@ -63,20 +63,23 @@
     border: none;
 }
 
-#P-dobra__anuncio div form input::placeholder {
+#P-dobra__form input::placeholder {
     color: #C8822F;
     font-weight: 400;
 }
 
-#P-dobra__anuncio div form button {
+#P-dobra__form a {
+    display: flex;
     font-size: 18px;
     font-weight: 700;
+    place-content: center;
+    place-items: center;
     color: white;
     background: linear-gradient(0deg, #744713, #C8822F);
     border: none;
 }
 
-#P-dobra__anuncio div form button:focus {
+#P-dobra__form a:focus {
     outline: none;
 }
 

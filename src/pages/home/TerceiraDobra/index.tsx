@@ -1,6 +1,6 @@
 import guia from './assets/GuiaExemplo.png'
 import calendario from './assets/CalendarioExemplos.png'
-import nuvem from '../../assets/nuvem.png'
+import nuvem from '../../../assets/nuvem.png'
 
 import './style.css'
 

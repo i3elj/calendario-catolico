@@ -1,0 +1,71 @@
+#obrigado {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    gap: 26px;
+    width: 734px;
+    position: relative;
+    z-index: 1;
+}
+
+#title {
+    border-radius: 8px;
+    padding: 14px 20px;
+    background-color: white;
+}
+
+#title h1 {
+    font-size: 64px;
+}
+
+#obrigado h3 {
+    font-size: 26px;
+}
+
+#obrigado p {
+    font-size: 18px;
+    font-weight: 500;
+    width: 402px;
+}
+
+#botao {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    place-content: center;
+    gap: 10px;
+    padding: 14px 32px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(180deg, #44C82F 0%, #156408 100%);
+}
+
+#botao:hover,
+#botao:focus {
+    outline: none;
+    border: none;
+}
+
+#botao h2 {
+    font-family: 'Montserrat';
+    color: white;
+    font-weight: 700;
+}
+
+#nuvem7,
+#nuvem8 {
+    position: absolute;
+    height: 494px;
+}
+
+#nuvem7 {
+    bottom: 50vh;
+    left: 50vw;
+}
+
+#nuvem8 {
+    top: 56vh;
+    right: 50vw;
+}

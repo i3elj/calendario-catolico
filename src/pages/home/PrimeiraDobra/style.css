@@ -76,6 +76,10 @@
     border: none;
 }
 
+#P-dobra__anuncio div form button:focus {
+    outline: none;
+}
+
 #P-dobra__anuncio div span {
     color: #C8822F;
     font-weight: 500;

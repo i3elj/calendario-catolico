@@ -1,4 +1,4 @@
-import nuvem from '../../assets/nuvem.png'
+import nuvem from '../../../assets/nuvem.png'
 
 export default function Nuvens2() {
     return (

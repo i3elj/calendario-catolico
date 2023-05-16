@@ -1,22 +1,19 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import Home from './pages/home'
+import Obrigado from './pages/obrigado'
+
 import './App.css'
 
-import PrimeiraDobra from './components/PrimeiraDobra'
-import Nuvens1 from './components/Nuvens1'
-import SegundaDobra from './components/SegundaDobra'
-import TerceiraDobra from './components/TerceiraDobra'
-import Nuvens2 from './components/Nuvens2'
-import Footer from './components/Footer'
-import Rasgo from './components/Rasgo'
-
-const App = () => <>
-  <PrimeiraDobra />
-  <Nuvens1 />
-  <Rasgo id="rasgo1" />
-  <SegundaDobra />
-  <Rasgo id="rasgo2" />
-  <Nuvens2 />
-  <TerceiraDobra />
-  <Footer />
-</>
-
-export default App
+export default function App() {
+  return (
+    <BrowserRouter
+      basename={import.meta.env.DEV ? '/' : '/calendario-catolico/'}
+    >
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/obrigado' element={<Obrigado />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}

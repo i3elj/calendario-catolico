@@ -1,0 +1,94 @@
+#T-dobra {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 84px;
+    width: 100%;
+    padding: 120px 0;
+}
+
+#T-dobra__section-1 img,
+#T-dobra__section-2 img {
+    height: 600px;
+}
+
+#T-dobra__section-1,
+#T-dobra__section-2 {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    gap: 126px;
+    z-index: 1;
+}
+
+#T-dobra__section-2 {
+    flex-direction: row-reverse;
+}
+
+#T-dobra__section-1 p,
+#T-dobra__section-2 p {
+    width: 400px;
+}
+
+#nuvem4 {
+    top: 1712px;
+    left: 54vw;
+}
+
+#nuvem5 {
+    top: 2402px;
+    right: 54vw;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+#nuvem6 {
+    top: 2646px;
+    left: 54vw;
+}
+
+@media (max-width: 768px) {
+    #T-dobra {
+        width: initial;
+        padding: 24px;
+        gap: 48px;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: clip;
+    }
+
+    #T-dobra__section-1,
+    #T-dobra__section-2 {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    #T-dobra__section-1 p,
+    #T-dobra__section-2 p {
+        font-size: 14px;
+        width: initial;
+        text-align: justify;
+    }
+
+    #T-dobra__section-1 img {
+        height: 280px;
+    }
+
+    #T-dobra__section-2 img {
+        height: 362px;
+    }
+
+    #nuvem4 {
+        top: 1788px;
+        left: 90px;
+    }
+
+    #nuvem5 {
+        top: 2138px;
+        left: -234px;
+    }
+
+    #nuvem6 {
+        top: 2432px;
+        left: 144px;
+    }
+}

@@ -1,0 +1,189 @@
+#P-dobra {
+    display: flex;
+    flex-direction: column;
+    place-items: start;
+    padding: 120px;
+    gap: 22px;
+}
+
+#P-dobra__anuncio {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+#P-dobra__anuncio div {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 408px;
+}
+
+#P-dobra__anuncio div h2 {
+    font-size: 42px;
+    text-align: center;
+    padding: 4px 0;
+    margin: 0;
+    color: #C8822F;
+    background-color: white;
+}
+
+#P-dobra__anuncio div p {
+    color: #C8822F;
+    font-size: 18px;
+    text-align: justify;
+}
+
+#P-dobra__anuncio div h3 {
+    color: #C8822F;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#P-dobra__anuncio div form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#P-dobra__anuncio div form input:focus {
+    outline: none;
+}
+
+#P-dobra__anuncio div form input {
+    height: 48px;
+    padding-left: 14px;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 500;
+    color: #A37721;
+    border: none;
+}
+
+#P-dobra__anuncio div form input::placeholder {
+    color: #C8822F;
+    font-weight: 400;
+}
+
+#P-dobra__anuncio div form button {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(0deg, #744713, #C8822F);
+    border: none;
+}
+
+#P-dobra__anuncio div span {
+    color: #C8822F;
+    font-weight: 500;
+}
+
+.nuvem {
+    position: absolute;
+    height: 332px;
+    z-index: 0;
+}
+
+#nuvem1 {
+    top: 52px;
+    left: 54vw;
+}
+
+#nuvem3 {
+    top: 510px;
+    right: 54vw;
+}
+
+#P-dobra__imagem {
+    height: 494px;
+    position: relative;
+    z-index: 1;
+}
+
+
+@media (max-width: 768px) {
+    #P-dobra {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+        padding: 24px;
+        gap: 0px;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: clip;
+    }
+
+    #P-dobra__anuncio {
+        display: flex;
+        flex-direction: column-reverse;
+        place-items: center;
+        gap: 0px;
+    }
+
+    #P-dobra__imagem {
+        height: 226px;
+    }
+
+    #P-dobra__anuncio div {
+        width: 342px;
+        gap: 14px;
+    }
+
+    #P-dobra__anuncio div h2 {
+        font-size: 26px;
+        padding: 0 10px;
+    }
+
+    #P-dobra__anuncio div p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    #P-dobra__anuncio div h3 {
+        font-size: 12px;
+        font-weight: 800;
+    }
+
+    #P-dobra__anuncio div form {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    #P-dobra__anuncio div form input {
+        height: initial;
+        padding: 8px;
+        border-radius: 2px;
+        font-size: 12px;
+    }
+
+    #P-dobra__anuncio div form input::placeholder {
+        font-size: 12px;
+    }
+
+    #P-dobra__anuncio div form button {
+        font-size: 12px;
+        border-radius: 2px;
+        padding: 8px 0;
+    }
+
+    #P-dobra__anuncio div span {
+        font-size: 12px;
+    }
+
+    #nuvem1 {
+        top: 64px;
+        left: 20vw;
+        height: 147px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    #nuvem3 {
+        top: 572px;
+        left: 44vw;
+        height: 128px;
+    }
+}

@@ -14,7 +14,7 @@
     z-index: 1;
 }
 
-#P-dobra__anuncio div {
+#P-dobra__copy {
     display: flex;
     flex-direction: column;
     gap: 22px;
@@ -52,7 +52,7 @@
     outline: none;
 }
 
-#P-dobra__form input, a {
+#P-dobra__form input {
     height: 48px;
     padding-left: 14px;
     border-radius: 6px;
@@ -74,6 +74,8 @@
     font-weight: 700;
     place-content: center;
     place-items: center;
+    padding: 14px 56px ;
+    border-radius: 8px;
     color: white;
     background: linear-gradient(0deg, #744713, #C8822F);
     border: none;

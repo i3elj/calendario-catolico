@@ -7,7 +7,7 @@ export default function SegundaDobra() {
         <div className="dobra" id="S-dobra">
             <section id="S-dobra__section-1">
                 <h1>PRA QUEM É O BÁSICÃO DO CATÓLICO?</h1>
-                <p>Para todo aquela pessoa que acabou de se converter ou para aquele católico que ainda não conhece como funciona a missa e se sente muitas vezes perdido, como se a missa fosse algo de outro mundo.</p>
+                <p>Que pena, as vendas do kit “O básico que todo Católico precisa saber” foram encerradas. Mas você pode se cadastrar na lista de espera para ser avisado, em primeira mão, quando disponibilizarmos o produto novamente.</p>
             </section>
             <section id="S-dobra__section-2">
                 <h1>E O QUE EU LEVO AO ADQUIRIR O KIT?</h1>

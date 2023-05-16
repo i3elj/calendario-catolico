@@ -9,7 +9,7 @@ export default function Obrigado() {
             <Logo />
             <div id="title"><h1>OBRIGADA POR SE INSCREVER</h1></div>
             <h3>Falta pouco para você garantir o acesso em primeira mão da abertura das vendas.</h3>
-            <p>Aperte o botão abaixo  e entre no grupo do whatsapp, iremos dar todos os avisos por lá!</p>
+            <p>Aperte o botão abaixo  e entre no grupo do WhatsApp, iremos dar todos os avisos por lá!</p>
             <button id="botao">
                 <WhatsAppIcon />
                 <h2>Quero entrar no grupo</h2>

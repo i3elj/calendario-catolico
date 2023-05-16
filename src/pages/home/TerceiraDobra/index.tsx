@@ -9,7 +9,7 @@ export default function TerceiraDobra() {
         <div className="dobra" id="T-dobra">
             <section id="T-dobra__section-1">
                 <img src={calendario} />
-                <p><b>O calendário possui</b> as datas mais importantes da igreja, incluindo dias de festas, de santos, de solenidades, como também o evangelho do dia.</p>
+                <p><b>O calendário possui</b> as datas mais importantes da igreja, incluindo: Dias de festas, dias de santos e solenidades além do evangelho do dia.</p>
             </section>
             <section id="T-dobra__section-2">
                 <img src={guia} />

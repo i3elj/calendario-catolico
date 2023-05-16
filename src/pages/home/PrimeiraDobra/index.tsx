@@ -11,8 +11,8 @@ function PrimeiraDobra() {
             <section id="P-dobra__anuncio">
                 <div id="P-dobra__copy">
                     <h2>INSCRIÇÕES ENCERRADAS</h2>
-                    <p>Que pena, as vendas do kit o básico do que todo católico precisa saber foram encerradas. Mas você pode se cadastrar na lista de espera para ser avisado em primeira mão quando houver uma nova abertura de vendas.</p>
-                    <h3>Cadastre-se seus dados aqui em baixo:</h3>
+                    <p>Que pena, as vendas do kit “O básico que todo Católico precisa saber” foram encerradas. Mas você pode se cadastrar na lista de espera para ser avisado, em primeira mão, quando disponibilizarmos o produto novamente.</p>
+                    <h3>Cadastre seus dados aqui em baixo:</h3>
                     <div id="P-dobra__form">
                         <input type="text" name="nome" placeholder="Nome" />
                         <input type="email" name="email" placeholder="Email" />

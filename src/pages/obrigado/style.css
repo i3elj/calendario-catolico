@@ -27,7 +27,7 @@
 #obrigado p {
     font-size: 18px;
     font-weight: 500;
-    width: 402px;
+    width: 408px;
 }
 
 #botao {
@@ -111,5 +111,13 @@
 
     #botao h2 {
         font-size: 12px;
+    }
+
+    #nuvem7 {
+        left: 0vw;
+    }
+
+    #nuvem8 {
+        right: 0vw;
     }
 }

@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://i3elj.github.io/calendario-catolico.git",
+  "homepage": "http://i3elj.github.io/calendario-catolico",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

@@ -2,15 +2,15 @@ import { useEffect } from 'react'
 
 export default function Rasgo({ id }: { id: string }) {
     useEffect(() => {
-        var canvas: HTMLCanvasElement = document.getElementById(id) as HTMLCanvasElement
-        var h = 75
-        var w = window.innerWidth * 3
+        const canvas: HTMLCanvasElement = document.getElementById(id) as HTMLCanvasElement
+        const h = 75
+        const w = window.innerWidth * 3
         canvas.width = w;
         canvas.height = h;
 
-        var M = 4294967296
-        var A = 1664525
-        var C = 1
+        const M = 4294967296
+        const A = 1664525
+        const C = 1
 
         class PSNG {
             Z: number
@@ -27,14 +27,14 @@ export default function Rasgo({ id }: { id: string }) {
         }
 
         function Interpolate(pa: number, pb: number, px: number) {
-            var ft = px * Math.PI,
+            const ft = px * Math.PI,
                 f = (1 - Math.cos(ft)) * 0.5;
             return pa * (1 - f) + pb * f;
         }
 
         class Perlin {
             x: number
-            amp: any
+            amp: number
             wl: number
             fq: number
             psng: PSNG
@@ -43,7 +43,7 @@ export default function Rasgo({ id }: { id: string }) {
             pos: number[]
             width: number
 
-            constructor(amp: any, wl: any, width: any) {
+            constructor(amp: number, wl: number, width: number) {
                 this.x = 0
                 this.amp = amp
                 this.wl = 1
@@ -69,9 +69,9 @@ export default function Rasgo({ id }: { id: string }) {
             }
         }
 
-        function GenerateNoise(amp: number, wl: number, octaves: number, divisor: number, width: any) {
-            var result = [];
-            for (var i = 0; i < octaves; i++) {
+        function GenerateNoise(amp: number, wl: number, octaves: number, divisor: number, width: number) {
+            const result: Perlin[] = [];
+            for (let i = 0; i < octaves; i++) {
                 result.push(new Perlin(amp, wl, width));
                 amp /= divisor;
                 wl /= divisor;
@@ -79,12 +79,11 @@ export default function Rasgo({ id }: { id: string }) {
             return result;
         }
 
-        function CombineNoise(pl: string | any[]) {
-            var result: { pos: number[] } = { pos: [] };
-            var total = 0
-            for (var i = 0, total: number = 0, j = 0; i < pl[0].pos.length; i++) {
+        function CombineNoise(pl: Perlin[]) {
+            const result: { pos: number[] } = { pos: [] };
+            for (let i = 0, total = 0; i < pl[0].pos.length; i++) {
                 total = 0
-                for (var j = 0; j < pl.length; j++) {
+                for (let j = 0; j < pl.length; j++) {
                     total += pl[j].pos[i]
                 }
                 result.pos.push(total);
@@ -92,13 +91,13 @@ export default function Rasgo({ id }: { id: string }) {
             return result;
         }
 
-        function DrawLine(L: { pos: any }, color: any) {
-            let canvas = document.getElementById(id) as HTMLCanvasElement
-            let ctx = canvas.getContext('2d') as CanvasRenderingContext2D
+        function DrawLine(L: { pos: number[] }, color: string) {
+            const canvas = document.getElementById(id) as HTMLCanvasElement
+            const ctx = canvas.getContext('2d') as CanvasRenderingContext2D
             ctx.beginPath()
             ctx.moveTo(0, h / 2)
 
-            for (var i = 0; i < L.pos.length; i++) {
+            for (let i = 0; i < L.pos.length; i++) {
                 ctx.lineTo(i, h / 2 + L.pos[i])
             }
 
@@ -122,8 +121,8 @@ export default function Rasgo({ id }: { id: string }) {
         }
 
         window.addEventListener('resize', () => {
-            let canvas = document.getElementById(id) as HTMLCanvasElement
-            let ctx = canvas.getContext('2d') as CanvasRenderingContext2D
+            const canvas = document.getElementById(id) as HTMLCanvasElement
+            const ctx = canvas.getContext('2d') as CanvasRenderingContext2D
             ctx.clearRect(0, 0, canvas.width, canvas.height)
             Draw("#F8F8F8", 35, 80, 4, 2, window.innerWidth * 2)
             Draw("#FFFFFF", 15, 40, 4, 2, window.innerWidth * 2)

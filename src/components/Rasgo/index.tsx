@@ -1,11 +1,6 @@
 import {useEffect} from 'react'
 
-type RasgoProps = {
-    id: string
-    inverter?: boolean
-}
-
-export default function Rasgo({ id, inverter }: RasgoProps) {
+export default function Rasgo({ id }) {
     useEffect(() => {
         var canvas = document.getElementById(id)
         var h = 75

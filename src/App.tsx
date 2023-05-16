@@ -13,7 +13,7 @@ const App = () => <>
   <Nuvens1 />
   <Rasgo id="rasgo1" />
   <SegundaDobra />
-  <Rasgo id="rasgo2" inverter={true} />
+  <Rasgo id="rasgo2" />
   <Nuvens2 />
   <TerceiraDobra />
   <Footer />
